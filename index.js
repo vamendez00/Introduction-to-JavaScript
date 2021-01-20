@@ -121,7 +121,6 @@ Use the hungryDog function and feeding requirements below to do the following:
     
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
-
 function hungryDog(age, weight){
   if ((age >= 1) && (weight <=5)) {
     let dogFoodAmount = (weight * .05);
@@ -135,13 +134,22 @@ function hungryDog(age, weight){
   } else if ((age>=1) && (weight>15)){
     let dogFoodAmount = (weight * .002);
     console.log (dogFoodAmount);
-} else {
-  console.log ("Working on it...");
-}
+  } else if ((age>=.166) && (age<=.333)){
+    let dogFoodAmount = (weight * 0.1);
+    console.log (dogFoodAmount);
+  } else if ((age>=.334) && (age<=.583)){
+    let dogFoodAmount = (weight * .05);
+    console.log (dogFoodAmount);
+  } else if ((age>=.584) && (age<1)){
+    let dogFoodAmount = (weight * .04);
+    console.log (dogFoodAmount);
+  } else {
+    console.log ('Your puppy is too young for dog food.');
+  }
 }
 hungryDog (1, 15);
-
-
+hungryDog (.5,12);
+hungryDog (.1, 12);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -165,8 +173,36 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
+  let computerResult = Math.random (computer); {
+  if (computerResult < .334) {
+    let computerResult="Rock";
+    console.log ("Rock");
+  } else if ((computerResult >=.334) && (computerResult < .667)) {
+    let computerResult="Paper";
+    console.log ("Paper");
+  } else {
+    let computerResult="Scissors";
+    console.log ("Scissors");
 }
+
+if (user === computer){;
+console.log ("It's a tie!");
+} else if ((user === "rock") && (computer === "scissors")) {
+console.log ("You win!");
+} else if ((user === "rock") && (computer === "paper")) {
+console.log ("You lose!");
+} else if ((user === "scissors") && (computer === "paper")) {
+console.log ("You win!");
+} else if ((user === "scissors") && (user === "rock")) {
+console.log ("You lose!");
+} else if ((user === "paper") && (computer === "rock")) {
+console.log ("You win!");
+} else if ((user === "paper") && (computer === "scissors")) {
+console.log ("You lose!");
+}
+}
+
+console.log (game (heads, computer));
   
   
 
@@ -181,11 +217,13 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles (kilometers) {
+  let milesCalculation = (kilometers*0.621371);
+console.log (milesCalculation);
+return (milesCalculation);
+}
 
-
+miles (12);
 
 //Task 5b - Feet to CM
 /*
@@ -195,10 +233,13 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
+function feet(Centimeters){
+    let feetCalculation = (cm*0.0328084);
+    console.log (feetCalculation);
+    return (feetCalculation);
   }
  
+  feet (32);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
