@@ -20,7 +20,7 @@ Do the following:
 /* let votingAge = 17;
   if (votingAge >= 18){
   console.log('true');
-} */
+}
 
 
 /*
@@ -70,9 +70,8 @@ Do the following:
 */
 
 function multiply(a, b){
-    /*add your code here*/
-    return a*b;
-  }
+  return a*b;
+}
 
 
 
@@ -89,7 +88,7 @@ Do the following:
     function dogYears(age){
       let humanYears=7*age; 
       return humanYears;
-      console.log (humanYears);
+      //console.log (humanYears);
   }
     dogYears(5);
 
@@ -171,38 +170,41 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+const userResult = prompt("Choose wisely: rock, paper, scissors");  
+console.log ("User chooses " + userResult);
 
-function game(user, computer){
-  let computerResult = Math.random (computer);
-  if (computerResult < .334) {
-    let computerResult="Rock";
-    console.log ("Rock");
-  } else if ((computerResult >=.334) && (computerResult < .667)) {
-    let computerResult="Paper";
-    console.log ("Paper");
-  } else {
-    let computerResult="Scissors";
-    console.log ("Scissors");
+let computerResult = Math.random ();
+if (computerResult < .334) {
+  computerResult="rock";
+} else if (computerResult <= .667) {
+  computerResult="paper";
+} else {
+  computerResult="scissors";
+}
+console.log("Computer chooses " + computerResult)
+
+
+function game (){
+if ((userResult === "rock") && (computerResult === "scissors")) {
+console.log ("you win!");
+} else if ((userResult === "rock") && (computerResult === "paper")) {
+console.log ("you lose!");
+} else if ((userResult === "scissors") && (computerResult === "paper")) {
+console.log ("you win!");
+} else if ((userResult === "scissors") && (computerResult === "rock")) {
+console.log ("you lose!");
+} else if ((userResult === "paper") && (computerResult === "rock")) {
+console.log ("you win!");
+} else if ((userResult === "paper") && (computerResult === "scissors")) {
+console.log ("you lose!");
+} else {
+console.log ("it's a tie!")
+}
 }
 
-if (user === computer){
-console.log ("It's a tie!");
-} else if ((user === "rock") && (computer === "scissors")) {
-console.log ("You win!");
-} else if ((user === "rock") && (computer === "paper")) {
-console.log ("You lose!");
-} else if ((user === "scissors") && (computer === "paper")) {
-console.log ("You win!");
-} else if ((user === "scissors") && (user === "rock")) {
-console.log ("You lose!");
-} else if ((user === "paper") && (computer === "rock")) {
-console.log ("You win!");
-} else if ((user === "paper") && (computer === "scissors")) {
-console.log ("You lose!");
-}
-}
-
-console.log (game (rock, computer));
+console.log (userResult);
+console.log (computerResult);
+game ();
   
   
 
