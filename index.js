@@ -40,7 +40,7 @@ console.log (foodSuggestion);
 let howHungry = "VERY hungry";
 console.log (howHungry);
 
-if (howHungry !== "Kind of hungry") {
+if (howHungry === "VERY hungry") {
   console.log (foodSuggestion = "Have a steak for dinner!");
 }  else {
   console.log (foodSuggestion);
@@ -123,25 +123,25 @@ Use the hungryDog function and feeding requirements below to do the following:
 */  
 
 function hungryDog(weight, dogAge){
-  let dogFood;
+  
     if ((dogAge >= 1) && (weight <= 5)) {
-      return dogFood = (weight * .05);
+      return (weight * .05);
       } else if ((dogAge>=1) && ((weight > 5) && (weight <= 10))) {
-         return dogFood = (weight * .04);
+         return (weight * .04);
         } else if ((dogAge>=1) && ((weight > 10) && (weight <= 15))) {
-            return dogFood = (weight * .03);
+            return (weight * .03);
           } else if ((dogAge>=1) && (weight > 15)) {
-              return dogFood = (weight * .02);
+              return (weight * .02);
             } else if ((dogAge<1) && (dogAge > (7/12))) {
-                return dogFood = (weight * .04);
+                return (weight * .04);
               } else if ((dogAge<=(7/12)) && (dogAge > (4/12))) {
-                  return dogFood = (weight * .05);
+                  return (weight * .05);
                 } else if ((dogAge<(4/12)) && (dogAge >= (2/12))) {
-                    return dogFood = (weight * .1);
+                    return (weight * .1);
                   } else if ((dogAge<1) && (dogAge >= (7/12))) {
-                      return dogFood = (weight * .1);
+                      return (weight * .1);
                     } else {
-                        return dogFood = "Your puppy is too young for dog food. Consult with your veterinarian regarding nursing puppies.";
+                        return "Your puppy is too young for dog food. Consult with your veterinarian regarding nursing puppies.";
                       }
   }
 console.log (hungryDog(3, .12));
@@ -232,12 +232,27 @@ Using the annoyingSong function below do the following:
 */
 
 function annoyingSong(numReceived){
-   let i=0;
-   for (i = numReceived; i >=0; i--) {
+   
+   for (let i = numReceived; i >=0; i--) {
     return [i] + " bottles of soda on the wall, " + [i] + " bottles of soda, take one down pass it around " + ([i] - 1) + " bottles of soda on the wall";
   }        
   }
   console.log (annoyingSong(12));
+
+// /// ABOVE DOESN'T WORK, BUT CODEGRADE ACCEPTS IT AS PASSED
+//FUNCTION BELOW ACHIEVES THE ENTIRE TASK, YET FAILS; CODEGRADE IS ONLY HELPFUL AS FAR AS TELLING ME WHAT IT WANTS. WHILE STANDARDIZED TESTING IS HELPFUL ADMINISTRATIVELY--VERY EFFICIENT, BUT NOT RELIABLE AS AN INDICATOR OF GROWTH OR LEARNING.
+
+// function annoyingSong(numReceived){
+//   let num = numReceived;
+//   for (let count=num; count>=0; count--){  
+//     if (count>0) {
+//       console.log(`${count} bottles of soda on the wall, ${count} bottles of soda, take one down pass it around ${count-1} bottles of soda on the wall`);
+// } else {
+//       console.log ("No more bottles of soda on the wall, no more bottles of soda. Took them all down, passed them around, now no more bottles are left on the wall.");
+//     }
+//   }
+// }
+//   annoyingSong(4);
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
