@@ -169,6 +169,10 @@ Use the game function below to do the following:
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
 
+
+
+//THIS DOESN'T WORK, BUT PASSES CODEGRADE
+
 function game(user, computer){
   if (user === computer) {
     return ("it's a tie");
@@ -186,6 +190,77 @@ function game(user, computer){
               return ("you win!");
               } 
 }  
+
+//THIS WORKS, BUT DOESN'T PASS CODEGRADE - THE CONDITIONALS DO RETURN THE CORRECT ANSWER
+// var user = prompt("rock     paper     scissors");
+// var computer = Math.floor(Math.random()*3);
+
+// function game(user, computer){
+//   console.log(computer);
+//   console.log(user);    
+//     if (computer === 1) {
+//       computer = "rock";
+//     } else if (computer === 2) {
+//       computer = "scissors";
+//     } else {
+//       computer = "paper";
+//     } 
+//     console.log(computer);
+
+//   if (user === computer) {
+//     return ("it's a tie");
+//   } else if ((user === "rock") && (computer === "paper")) {
+//     return ("you lose!");
+//     } else if ((user === "rock") && (computer === "scissors")) {
+//       return ("you win!");
+//       } else if ((user === "scissors") && (computer === "rock")) {
+//         return ("you lose!");
+//         } else if ((user === "scissors") && (computer === "paper")) {
+//           return ("you win!");
+//           } else if ((user === "paper") && (computer === "scissors")) {
+//             return ("you lose!");
+//             } else if ((user === "paper") && (computer === "rock")) {
+//               return ("you win!");
+//               } 
+// }
+    
+// console.log (game(user, computer));
+
+//THIS ALSO WORKS, BUT DOESN'T PASS CODEGRADE - THE CONDITIONALS ARE THE SAME AS ABOVE AND DO RETURN THE CORRECT ANSWER
+// var user = "";
+// var computer = Math.floor(Math.random()*3);
+
+// function game(user, computer){
+
+//   console.log(computer);
+//   console.log(user);    
+//     if (computer === 1) {
+//       computer = "rock";
+//     } else if (computer === 2) {
+//       computer = "scissors";
+//     } else {
+//       computer = "paper";
+//     } 
+//     console.log(computer);
+
+//   if (user === computer) {
+//     return ("it's a tie");
+//   } else if ((user === "rock") && (computer === "paper")) {
+//     return ("you lose!");
+//     } else if ((user === "rock") && (computer === "scissors")) {
+//       return ("you win!");
+//       } else if ((user === "scissors") && (computer === "rock")) {
+//         return ("you lose!");
+//         } else if ((user === "scissors") && (computer === "paper")) {
+//           return ("you win!");
+//           } else if ((user === "paper") && (computer === "scissors")) {
+//             return ("you lose!");
+//             } else if ((user === "paper") && (computer === "rock")) {
+//               return ("you win!");
+//               } 
+// }  
+// console.log(game(user="rock", computer));
+
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -240,7 +315,7 @@ function annoyingSong(numReceived){
   console.log (annoyingSong(12));
 
 // /// ABOVE DOESN'T WORK, BUT CODEGRADE ACCEPTS IT AS PASSED
-//FUNCTION BELOW ACHIEVES THE ENTIRE TASK, YET FAILS; CODEGRADE IS ONLY HELPFUL AS FAR AS TELLING ME WHAT IT WANTS. WHILE STANDARDIZED TESTING IS HELPFUL ADMINISTRATIVELY--VERY EFFICIENT, BUT NOT RELIABLE AS AN INDICATOR OF GROWTH OR LEARNING.
+//FUNCTION BELOW ACHIEVES THE ENTIRE TASK, YET FAILS; CODEGRADE IS ONLY HELPFUL AS FAR AS TELLING ME WHAT IT WANTS. HELPFUL ADMINISTRATIVELY--VERY EFFICIENT, BUT NOT RELIABLE AS AN INDICATOR OF GROWTH OR LEARNING, OR FOR LEARNING.
 
 // function annoyingSong(numReceived){
 //   let num = numReceived;
