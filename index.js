@@ -381,6 +381,31 @@ function vowelCounter(string) {
 
 console.log (vowelCounter("You are here.")) //returns 6
 
+//ALTERNATIVE SOLUTION - not all parts work
+// var string = "";
+// // var vowelsArray = [];
+
+// function vowelCounter(string) {
+//   //THIS PART WORKS
+//   var input = string.toLowerCase(); //convert string to lowercase
+//   console.log(input);
+  
+//   //THIS PART WORKS
+//   var inputArray = input.trim( ).split(''); //trim and split string into array of individual letters
+//   return inputArray;
+//   console.log(inputArray);  
+  
+//   // THIS PART DOESN'T WORK
+//   for (let i=0; i < inputArray.length; i++){ //iterate through array of individual letters //set up conditional
+//     if (inputArray[i] === 'a'){ 
+//         // || (inputArray[i] === 'e') || (inputArray[i] === 'i') || (inputArray[i] === 'o') || (inputArray[i] === 'u')) {
+//           vowelsArray.push(inputArray[i]);
+          
+//         } return vowelsArray.length; //end of conditional
+//       } //end of loop
+// } //end of function
+// console.log(vowelCounter("You are here."));
+
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
     //console.log('its working');
