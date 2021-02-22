@@ -372,12 +372,14 @@ Using the vowelCounter function below do the following:
   HINT - try looking up the .includes() method
 */
 
+var string = "";
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(string) {
+  return (string.match(/[aeiou]/gi) || []).length; 
+  //g is "global" flag and will go through entire expression // i is "ignore" uppercase/lowercase differences // [] is in case no matches - will return empty array
 }
 
-
+console.log (vowelCounter("You are here.")) //returns 6
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
